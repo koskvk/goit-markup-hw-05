@@ -57,7 +57,7 @@
         <section class="hero-section section overlay">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-btn" type="button">Заказать услугу</button>
+                <button data-modal-open class="hero-btn" type="button">Заказать услугу</button>
             </div>
         </section>
 
@@ -123,18 +123,27 @@
                         <img src="./images/index/box1.jpg" 
                         alt="человек набирает текст" 
                         width="370">
+                        <div class="wedo-product-box">
+                            <h3 class="wedo-product-title">Десктопные приложения</h3>
+                        </div>
                     </li>
 
                     <li class="wedo-item">
                         <img src="./images/index/box2.jpg" 
                         alt="человек держит в руке телефон" 
                         width="370">
+                        <div class="wedo-product-box">
+                            <h3 class="wedo-product-title">Мобильные приложения</h3>
+                        </div>
                     </li>
 
                     <li class="wedo-item">
                         <img src="./images/index/box3.jpg" 
                         alt="человек на планшете выбирает с палитры цвет" 
                         width="370">
+                        <div class="wedo-product-box">
+                            <h3 class="wedo-product-title">Дизайнерские решения</h3>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -417,7 +426,7 @@
             <div class="join">
                 <p class="join-item">ПРИСОЕДИНЯЙТЕСЬ</p>
                 <ul class="social-list list">
-                    <li>
+                    <li class="social-list-item">
                         <a class="footer-social-link social-link" href="">
                                                         <svg class=" social-icons">
                             <use href="./images/icons.svg#instagram"></use>
@@ -425,7 +434,7 @@
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="social-list-item">
                         <a class="footer-social-link social-link" href="">
                                                         <svg class=" social-icons">
                             <use href="./images/icons.svg#twitter"></use>
@@ -433,7 +442,7 @@
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="social-list-item">
                         <a class="footer-social-link social-link" href="">
                                                         <svg class=" social-icons">
                             <use href="./images/icons.svg#facebook"></use>
@@ -441,7 +450,7 @@
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="social-list-item">
                         <a class="footer-social-link social-link" href="">
                                                         <svg class=" social-icons">
                             <use href="./images/icons.svg#linkedin"></use>
@@ -453,5 +462,20 @@
 
         </div>
     </footer>
+
+<!-- modal window -->
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="modal-btn" type="button">
+                <svg class=" modal-icon">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="/JS/modal.js"></script>
+
 </body>
 </html>                 
